@@ -1,5 +1,5 @@
 ---
-title: "Update Ribbon customizations in Office projects that you migrate to the .NET Framework 4 or the .NET Framework 4.5"
+title: "Update Ribbon customizations in Office projects migrated to .NET Framework 4, 4.5"
 ms.date: "02/02/2017"
 ms.topic: "conceptual"
 dev_langs:
@@ -18,7 +18,7 @@ ms.workload:
 
 - Modify the generated Ribbon code.
 
-- Modify any code that instantiates Ribbon controls at runtime, handles Ribbon events, or sets the position of a Ribbon component programmatically.
+- Modify any code that instantiates Ribbon controls at run time, handles Ribbon events, or sets the position of a Ribbon component programmatically.
 
 ## Update the generated Ribbon code
  If the target framework of your project is changed to the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] or later, you must change the generated code for the Ribbon item by performing the following steps. The code files you need to update depend on the programming language and how you created the project:
@@ -69,7 +69,7 @@ ms.workload:
 3. In the `InitializeComponent` method, modify any code that constructs a Ribbon control so that the code instead uses one of the helper methods of the <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> object.
 
     > [!NOTE]
-    >  In Visual C# projects, you must expand the region that is named `Component Designer generated code` to see the `InitializeComponent` method.
+    > In Visual C# projects, you must expand the region that is named `Component Designer generated code` to see the `InitializeComponent` method.
 
      For example, assume that your file contains the following line of code that instantiates a <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> named `button1` in a project that targets the .NET Framework 3.5.
 

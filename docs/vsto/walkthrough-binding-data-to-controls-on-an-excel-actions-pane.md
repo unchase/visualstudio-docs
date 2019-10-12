@@ -34,7 +34,7 @@ ms.workload:
 - Showing the actions pane when the application opens.
 
 > [!NOTE]
->  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).
+> Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).
 
 ## Prerequisites
  You need the following components to complete this walkthrough:
@@ -141,7 +141,7 @@ ms.workload:
      [!code-csharp[Trin_VstcoreActionsPaneExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ActionsControl.cs#2)]
 
 ## Show the actions pane
- The actions pane isn't visible until you add the control at runtime.
+ The actions pane isn't visible until you add the control at run time.
 
 #### To show the actions pane
 

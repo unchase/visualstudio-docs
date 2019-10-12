@@ -1,6 +1,6 @@
 ---
 title: "Design and create Office solutions"
-ms.date: "02/02/2017"
+ms.date: "08/14/2019"
 ms.topic: "conceptual"
 dev_langs:
   - "VB"
@@ -22,8 +22,7 @@ Visual Studio provides project templates that you can use to create several diff
 
 [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
-> [!NOTE]
-> Interested in developing solutions that extend the Office experience across [multiple platforms](https://dev.office.com/add-in-availability)? Check out the new [Office Add-ins model](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office Add-ins have a small footprint compared to VSTO Add-ins and solutions, and you can build them by using almost any web programming technology, such as HTML5, JavaScript, CSS3, and XML.
+[!include[Add-ins note](includes/addinsnote.md)]
 
 ## Create Office projects
  Before you begin, you should determine your requirements and discover the type of solution that offers the best fit. For example, if your Office solution must run every time the application is used, a VSTO Add-in best fits your requirements. If the code is tightly integrated with a single document, create a document-level customization. These project types are available as Visual Studio project templates. For more information about the Office project templates that are included with Visual Studio, see [Office project templates overview](../vsto/office-project-templates-overview.md). For more information about how to create Office projects, see [How to: Create Office projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
@@ -48,7 +47,7 @@ Visual Studio provides project templates that you can use to create several diff
   If Visual Studio changes the target .NET Framework for your project and you are using ClickOnce to deploy your solution, make sure that you also select the corresponding version of the .NET Framework in the **Prerequisites** dialog box. This selection does not change automatically when you change the target framework for your project. For more information, see [How to: Install prerequisites on end-user computers to run Office solutions](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).
 
 > [!NOTE]
->  You cannot target the .NET Framework 3.5 or earlier in Office projects that you create by using [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. Office projects that you create by using [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] require features that were first introduced in the [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]
+> You cannot target the .NET Framework 3.5 or earlier in Office projects that you create by using [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. Office projects that you create by using [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] require features that were first introduced in the [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]
 
 ### Understand when the Office PIAs are required on end-user computers
  By default, Office primary interop assemblies (PIAs) do not need to be installed on end-user computers if the **Embed Interop Types** property of each Office PIA reference in the project is set to **True**, which is the default value. In this scenario, the type information for the PIA types that are used by your solution is embedded into the solution assembly when you build the project. At run time, the embedded type information is used instead of the PIAs to call into the Office application's COM-based object model. For more information about how types from PIAs are embedded into your solution, see [Type equivalence and embedded interop types](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types).

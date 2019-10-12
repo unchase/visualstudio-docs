@@ -25,7 +25,7 @@ ms.workload:
 |TypeName|UseLiteralsWhereAppropriate|
 |CheckId|CA1802|
 |Category|Microsoft.Performance|
-|Breaking Change|Non-breaking|
+|Breaking change|Non-breaking|
 
 ## Cause
 
@@ -35,11 +35,11 @@ By default, this rule only looks at externally visible fields, but this is [conf
 
 ## Rule description
 
-The value of a `static readonly` field is computed at runtime when the static constructor for the declaring type is called. If the `static readonly` field is initialized when it is declared and a static constructor is not declared explicitly, the compiler emits a static constructor to initialize the field.
+The value of a `static readonly` field is computed at run time when the static constructor for the declaring type is called. If the `static readonly` field is initialized when it is declared and a static constructor is not declared explicitly, the compiler emits a static constructor to initialize the field.
 
-The value of a `const` field is computed at compile time and stored in the metadata, which increases runtime performance when it is compared to a `static readonly` field.
+The value of a `const` field is computed at compile time and stored in the metadata, which increases run-time performance when it is compared to a `static readonly` field.
 
-Because the value assigned to the targeted field is computable at compile time, change the declaration to a `const` field so that the value is computed at compile time instead of at runtime.
+Because the value assigned to the targeted field is computable at compile time, change the declaration to a `const` field so that the value is computed at compile time instead of at run time.
 
 ## How to fix violations
 
@@ -51,9 +51,9 @@ It is safe to suppress a warning from this rule, or disable the rule, if perform
 
 ## Configurability
 
-If you're running this rule from [FxCop analyzers](install-fxcop-analyzers.md) (and not through static code analysis), you can configure which parts of your codebase to run this rule on, based on their accessibility. For example, to specify that the rule should run only against the non-public API surface, add the following key-value pair to an .editorconfig file in your project:
+If you're running this rule from [FxCop analyzers](install-fxcop-analyzers.md) (and not with legacy analysis), you can configure which parts of your codebase to run this rule on, based on their accessibility. For example, to specify that the rule should run only against the non-public API surface, add the following key-value pair to an .editorconfig file in your project:
 
-```
+```ini
 dotnet_code_quality.ca1802.api_surface = private, internal
 ```
 

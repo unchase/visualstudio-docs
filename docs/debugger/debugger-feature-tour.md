@@ -2,13 +2,13 @@
 title: "First look at the debugger"
 description: "Get started debugging applications using the Visual Studio debugger"
 ms.custom: "seoapril2019"
-ms.date: "04/08/2019"
-ms.topic: "quickstart"
+ms.date: 04/08/2019
+ms.topic: quickstart
 helpviewer_keywords:
   - "debugger"
 ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
-author: "mikejo5000"
-ms.author: "mikejo"
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
   - "multiple"
@@ -109,6 +109,16 @@ Click the **Restart** ![Restart App](../debugger/media/dbg-tour-restart.png "Res
 When you press **Restart**, it saves time versus stopping the app and restarting the debugger. The debugger pauses at the first breakpoint that is hit by executing code.
 
 If you do want to stop the debugger and get back into the code editor, you can press the red stop ![Stop Debugging](../debugger/media/dbg-tour-stop-debugging.png "Stop Debugging") button instead of **Restart**.
+
+## Edit your code and continue debugging (C#, VB, C++, XAML)
+
+In most languages supported by Visual Studio, you can edit your code in the middle of a debugging session and continue debugging. To use this feature, click into your code with your cursor while paused in the debugger, make edits, and press **F5**, **F10**, or **F11** to continue debugging.
+
+![Edit and continue debugging](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
+
+For more information on using the feature and on feature limitations, see [Edit and Continue](../debugger/edit-and-continue.md).
+
+To modify XAML code during a debugging session, see [Write and debug running XAML code with XAML Hot Reload](xaml-hot-reload.md).
 
 ## Inspect variables with data tips
 

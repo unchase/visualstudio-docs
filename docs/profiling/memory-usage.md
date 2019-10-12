@@ -2,10 +2,10 @@
 title: "Measure memory usage in your apps"
 description: "Find memory leaks and inefficient memory while you're debugging with the debugger-integrated diagnostic tool."
 ms.custom: "seodec18"
-ms.date: "04/25/2018"
-ms.topic: "tutorial"
-author: "mikejo5000"
-ms.author: "mikejo"
+ms.date: 04/25/2018
+ms.topic: tutorial
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
   - "multiple"
@@ -23,7 +23,7 @@ Although you can collect memory snapshots at any time in the **Memory Usage** to
 You can also use the memory tool outside of the debugger. See [Memory Usage without debugging](../profiling/memory-usage-without-debugging2.md). You can use the profiling tools with no debugger attached with Windows 7 and later. Windows 8 and later is required to run profiling tools with the debugger (**Diagnostic Tools** window).
 
 > [!NOTE]
-> **Custom Allocator Support** The native memory profiler works by collecting allocation [ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) event data emitted by during runtime.  Allocators in the CRT and Windows SDK have been annotated at the source level so that their allocation data can be captured.  If you are writing your own allocators, then any functions that return a pointer to newly allocated heap memory can be decorated with [__declspec](/cpp/cpp/declspec)(allocator), as seen in this example for myMalloc:
+> **Custom Allocator Support** The native memory profiler works by collecting allocation [ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) event data emitted during run time.  Allocators in the CRT and Windows SDK have been annotated at the source level so that their allocation data can be captured. If you are writing your own allocators, then any functions that return a pointer to newly allocated heap memory can be decorated with [__declspec](/cpp/cpp/declspec)(allocator), as seen in this example for myMalloc:
 >
 > `__declspec(allocator) void* myMalloc(size_t size)`
 
@@ -40,7 +40,7 @@ In this tutorial, you will:
     If you have an area where you suspect a memory issue, set the first breakpoint before the memory issue occurs.
 
     > [!TIP]
-    >  Because it can be challenging to capture the memory profile of an operation that interests you when your app frequently allocates and de-allocates memory, set breakpoints at the start and end of the operation (or step through the operation) to find the exact point that memory changed.
+    > Because it can be challenging to capture the memory profile of an operation that interests you when your app frequently allocates and de-allocates memory, set breakpoints at the start and end of the operation (or step through the operation) to find the exact point that memory changed.
 
 2. Set a second breakpoint at the end of the function or region of code that you want to analyze (or after a suspected memory issue occurs).
 
@@ -57,7 +57,7 @@ In this tutorial, you will:
      ![Diagnostics Tools Summary Tab](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
 
      > [!NOTE]
-     >  Because collecting memory data can affect the debugging performance of your native or mixed-mode apps, memory snapshots are disabled by default. To enable snapshots in native or mixed-mode apps, start a debugging session (Shortcut key: **F5**). When the **Diagnostic Tools** window appears, choose the **Memory Usage** tab, and then choose **Heap Profiling**.
+     > Because collecting memory data can affect the debugging performance of your native or mixed-mode apps, memory snapshots are disabled by default. To enable snapshots in native or mixed-mode apps, start a debugging session (Shortcut key: **F5**). When the **Diagnostic Tools** window appears, choose the **Memory Usage** tab, and then choose **Heap Profiling**.
      >
      >  ![Enable snapshots](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")
      >
@@ -68,7 +68,7 @@ In this tutorial, you will:
     ![Take snapshot](../profiling/media/dbgdiag_mem_mixedtoolbar_takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")
 
      > [!TIP]
-     >  To create a baseline for memory comparisons, consider taking a snapshot at the start of your debugging session.
+     > To create a baseline for memory comparisons, consider taking a snapshot at the start of your debugging session.
 
 6. Run the scenario that will cause your first breakpoint to be hit.
 

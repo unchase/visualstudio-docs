@@ -1,6 +1,6 @@
 ---
 title: "How to test a Visual C++ DLL for UWP apps"
-ms.date: 02/15/2018
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
 manager: jillfra
@@ -12,21 +12,33 @@ author: mikeblome
 
 This topic describes one way to create unit tests for a C++ DLL for Universal Windows Platform (UWP) apps with the Microsoft Test Framework for C++. The RooterLib DLL demonstrates vague memories of limit theory from the calculus by implementing a function that calculates an estimate of the square root of a given number. The DLL might then be included in a UWP app that shows a user the fun things that can be done with math.
 
- This topic shows you how to use unit testing as the first step in development. In this approach, you first write a test method that verifies a specific behavior in the system that you are testing and then you write the code that passes the test. By making changes in the order of the following procedures, you can reverse this strategy to first write the code that you want to test and then write the unit tests.
+This topic shows you how to use unit testing as the first step in development. In this approach, you first write a test method that verifies a specific behavior in the system that you are testing and then you write the code that passes the test. By making changes in the order of the following procedures, you can reverse this strategy to first write the code that you want to test and then write the unit tests.
 
- This topic also creates a single Visual Studio solution and separate projects for the unit tests and the DLL that you want to test. You can also include the unit tests directly in the DLL project, or you can create separate solutions for the unit tests and the .DLL. See [Adding unit tests to existing C++ applications](../test/how-to-use-microsoft-test-framework-for-cpp.md) for tips on which structure to use.
+This topic also creates a single Visual Studio solution and separate projects for the unit tests and the DLL that you want to test. You can also include the unit tests directly in the DLL project, or you can create separate solutions for the unit tests and the .DLL. See [Adding unit tests to existing C++ applications](../test/how-to-use-microsoft-test-framework-for-cpp.md) for tips on which structure to use.
 
 ## <a name="Create_the_solution_and_the_unit_test_project"></a> Create the solution and the unit test project
 
-1. On the **File** menu, choose **New** > **New Project**.
+::: moniker range="vs-2019"
 
-2. In the New Project dialog, expand **Installed** > **Visual C++** and choose **Windows Universal**. Then choose **Unit Test App (Universal Windows)** from the list of project templates.
+Start by creating a new test project. On the **File** menu, choose **New** > **Project**. In the **Create a New Project** dialog, type "test" into the search box and then set **Language** to C++. Then choose **Unit Test App (Universal Windows)** from the list of project templates.
 
-3. Name the project `RooterLibTests`; specify the location; name the solution `RooterLib`; and make sure **Create directory for solution** is checked.
+   ![Create a new UWP test project](media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+Start by creating a new test project. On the **File** menu, choose **New** > **Project**. In the **New Project** dialog, expand **Installed** > **Visual C++** and choose **Windows Universal**. Then choose **Unit Test App (Universal Windows)** from the list of project templates.
+
+::: moniker-end
+
+1. In the New Project dialog, expand **Installed** > **Visual C++** and choose **Windows Universal**. Then choose **Unit Test App (Universal Windows)** from the list of project templates.
+
+2. Name the project `RooterLibTests`; specify the location; name the solution `RooterLib`; and make sure **Create directory for solution** is checked.
 
      ![Specify the solution and project name and location](../test/media/ute_cpp_windows_unittestlib_createspecs.png)
 
-4. In the new project, open **unittest1.cpp**.
+3. In the new project, open **unittest1.cpp**.
 
      ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png)
 
@@ -61,13 +73,24 @@ This topic describes one way to create unit tests for a C++ DLL for Universal Wi
 
 ## <a name="Add_the_DLL_project_to_the_solution"></a> Add the DLL project to the solution
 
-1. In **Solution Explorer**, choose the solution name. From the shortcut menu, choose **Add**, and then **Add New Project**.
+::: moniker range="vs-2019"
 
-     ![Create the RooterLib project](../test/media/ute_cpp_windows_rooterlib_create.png)
+In **Solution Explorer**, choose the solution name. From the shortcut menu, choose **Add**, and then **New Project**. In the **Add a New Project** dialog, set **Language** to C++ and type "DLL" into the search box. From the results list, choose **Unit Test App (Universal Windows - C++/CX)**.
 
-2. In the **Add New Project** dialog box, choose **DLL (UWP apps)**.
+![Create the RooterLib project](../test/media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
 
-3. Add the following code to the *RooterLib.h* file:
+::: moniker-end
+
+::: moniker range="vs-2017"
+In **Solution Explorer**, choose the solution name. From the shortcut menu, choose **Add**, and then **New Project**.
+
+![Create the RooterLib project](../test/media/ute_cpp_windows_rooterlib_create.png)
+
+::: moniker-end
+
+1. In the **Add New Project** dialog box, choose **DLL (UWP apps)**.
+
+2. Add the following code to the *RooterLib.h* file:
 
     ```cpp
     // The following ifdef block is the standard way of creating macros which make exporting
@@ -93,7 +116,7 @@ This topic describes one way to create unit tests for a C++ DLL for Universal Wi
 
      The `CRooterLib` class declares a constructor and the `SqareRoot` estimator method.
 
-4. Add the ROOTERLIB_EXPORTS symbol to the command line.
+3. Add the ROOTERLIB_EXPORTS symbol to the command line.
 
     1. In **Solution Explorer**, choose the **RooterLib** project, and then choose **Properties** from the shortcut menu.
 
@@ -103,7 +126,7 @@ This topic describes one way to create unit tests for a C++ DLL for Universal Wi
 
     3. Choose **\<Edit...>** from the **Preprocessor Definitions** list, and then add `ROOTERLIB_EXPORTS` in the **Preprocessor Definitions** dialog box.
 
-5. Add minimal implementations of the declared functions. Open *RooterLib.cpp* and add the following code:
+4. Add minimal implementations of the declared functions. Open *RooterLib.cpp* and add the following code:
 
     ```cpp
     // constructor
@@ -123,13 +146,9 @@ This topic describes one way to create unit tests for a C++ DLL for Universal Wi
 
 1. Add RooterLib to the RooterLibTests project.
 
-   1. In **Solution Explorer**, choose the **RooterLibTests** project and then choose **References** on the shortcut menu.
+   1. In **Solution Explorer**, choose the **RooterLibTests** project and then choose **Add** > **Reference** on the shortcut menu.
 
-   2. On the **RooterLib Project Properties** dialog box, expand **Common Properties** and choose **Framework and References**.
-
-   3. Choose **Add New Reference**
-
-   4. In the **Add Reference** dialog box, expand **Solution** and then choose **Projects**. Then select the **RouterLib** item.
+   1. In the **Add Reference** dialog box, choose **Projects**. Then select the **RouterLib** item.
 
 2. Include the RooterLib header file in *unittest1.cpp*.
 

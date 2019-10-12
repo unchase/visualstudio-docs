@@ -39,7 +39,7 @@ The Visual Studio Emulator for Android is a desktop application that emulates an
  You can uninstall the Visual Studio Emulator for Android using Add/Remove Programs in the Control Panel.
 
 > [!NOTE]
->  Uninstalling Visual Studio will not uninstall the emulator. You must uninstall the emulator separately.
+> Uninstalling Visual Studio will not uninstall the emulator. You must uninstall the emulator separately.
 
  When you uninstall the Visual Studio Emulator for Android, the Hyper-V Virtual Ethernet Adapters that were created for the emulator to use are not automatically removed. You can manually remove these virtual adapters (if not in use) by opening Hyper-V Manager, selecting one of the emulator VHD images, choosing the Networking tab, and choosing **Remove** for each of the switches that appears in this tab.
 
@@ -63,7 +63,7 @@ The Visual Studio Emulator for Android is a desktop application that emulates an
 
   To understand the capabilities of the emulator's network connection, think of it as similar to a Wi-Fi connection from your Android phone to the same network. If an app running on your phone can access a network resource over its Wi-Fi connection, then an app running on the emulator can also access the same network resource.
 
-  For more info on network requirements, see [System requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)
+  For more info on network requirements, see [System requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md).
 
   For info on troubleshooting networking issues, see [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).
 

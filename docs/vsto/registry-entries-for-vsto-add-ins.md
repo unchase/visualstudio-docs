@@ -1,6 +1,6 @@
 ---
 title: "Registry entries for VSTO Add-ins"
-ms.date: "02/02/2017"
+ms.date: "08/14/2019"
 ms.topic: "conceptual"
 dev_langs:
   - "VB"
@@ -22,12 +22,14 @@ ms.workload:
 
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]
 
+[!include[Add-ins note](includes/addinsnote.md)]
+
  When you build your project, Visual Studio creates these registry entries on the development computer so that you can easily run and debug the VSTO Add-in. If you use ClickOnce to deploy your VSTO Add-in, the registry entries are automatically created on the end-user computer. If you use Windows Installer to deploy your VSTO Add-in, you must configure the InstallShield Limited Edition project to create the registry entries on the end-user computer.
 
  For more information about how the registry entries are used during the load process for VSTO Add-ins, see [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).
 
 > [!NOTE]
->  In this topic, the text *add-in ID* represents a unique ID for your VSTO Add-in. By default, the ID is the name of your VSTO Add-in assembly.
+> In this topic, the text *add-in ID* represents a unique ID for your VSTO Add-in. By default, the ID is the name of your VSTO Add-in assembly.
 
 ## Register VSTO Add-ins for the current user vs. all users
  When a VSTO Add-in is installed, it can be registered in two ways:

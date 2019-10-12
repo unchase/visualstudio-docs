@@ -22,7 +22,7 @@ ms.workload:
 |TypeName|OperatorsShouldHaveSymmetricalOverloads|
 |CheckId|CA2226|
 |Category|Microsoft.Usage|
-|Breaking Change|Non Breaking|
+|Breaking change|Non-breaking|
 
 ## Cause
 
@@ -46,9 +46,9 @@ Do not suppress a warning from this rule. If you do, your type will not work in 
 
 ## Configurability
 
-If you're running this rule from [FxCop analyzers](install-fxcop-analyzers.md) (and not through static code analysis), you can configure which parts of your codebase to run this rule on, based on their accessibility. For example, to specify that the rule should run only against the non-public API surface, add the following key-value pair to an .editorconfig file in your project:
+If you're running this rule from [FxCop analyzers](install-fxcop-analyzers.md) (and not with legacy analysis), you can configure which parts of your codebase to run this rule on, based on their accessibility. For example, to specify that the rule should run only against the non-public API surface, add the following key-value pair to an .editorconfig file in your project:
 
-```
+```ini
 dotnet_code_quality.ca2226.api_surface = private, internal
 ```
 

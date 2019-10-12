@@ -26,7 +26,7 @@ ms.workload:
 |TypeName|EnumsShouldHaveZeroValue|
 |CheckId|CA1008|
 |Category|Microsoft.Design|
-|Breaking Change|Non-breaking - When you are prompted to add a **None** value to a non-flag enumeration. Breaking - When you are prompted to rename or remove any enumeration values.|
+|Breaking change|Non-breaking - When you are prompted to add a **None** value to a non-flag enumeration. Breaking - When you are prompted to rename or remove any enumeration values.|
 
 ## Cause
 
@@ -50,9 +50,9 @@ Do not suppress a warning from this rule except for flags-attributed enumeration
 
 ## Configurability
 
-If you're running this rule from [FxCop analyzers](install-fxcop-analyzers.md) (and not through static code analysis), you can configure which parts of your codebase to run this rule on, based on their accessibility. For example, to specify that the rule should run only against the non-public API surface, add the following key-value pair to an .editorconfig file in your project:
+If you're running this rule from [FxCop analyzers](install-fxcop-analyzers.md) (and not with legacy analysis), you can configure which parts of your codebase to run this rule on, based on their accessibility. For example, to specify that the rule should run only against the non-public API surface, add the following key-value pair to an .editorconfig file in your project:
 
-```
+```ini
 dotnet_code_quality.ca1008.api_surface = private, internal
 ```
 

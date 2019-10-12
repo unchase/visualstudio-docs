@@ -1,11 +1,11 @@
 ---
 title: "Create a Node.js and Express app"
 description: In this tutorial, you create an app in using Node.js tools for Visual Studio
-ms.date: "09/24/2018"
-ms.topic: "tutorial"
+ms.date: 09/24/2018
+ms.topic: tutorial
 ms.devlang: javascript
-author: "mikejo5000"
-ms.author: "mikejo"
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 dev_langs:
   - JavaScript
@@ -24,7 +24,7 @@ If you haven't already installed Visual Studio, go to the [Visual Studio downloa
 
 ::: moniker range="vs-2019"
 
-If you haven't already installed Visual Studio, go to the [Visual Studio downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) page to install it for free.
+If you haven't already installed Visual Studio, go to the [Visual Studio downloads](https://visualstudio.microsoft.com/downloads) page to install it for free.
 
 ::: moniker-end
 

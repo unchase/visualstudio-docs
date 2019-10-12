@@ -84,7 +84,7 @@ ms.workload:
 - An Outlook Form Storage (*.ofs*) file.
 
     > [!NOTE]
-    >  This file is only added to the project if you import a form region that was designed in Outlook.
+    > This file is only added to the project if you import a form region that was designed in Outlook.
 
 #### Form region factory class
  The form region code file contains a partial class that implements the <xref:Microsoft.Office.Tools.Outlook.IFormRegionFactory> interface. This is the form region factory class. The form region factory class is responsible for creating new instances of the form region.
@@ -104,7 +104,7 @@ ms.workload:
  The form region designer helps you to design the layout and appearance of a form region. You can drag managed controls to the surface of the designer, double-click controls to open event handlers, and set properties in the **Properties** window.
 
 > [!NOTE]
->  You can find properties that affect the way the form region appears in Outlook beneath the **Manifest** node in the **Properties** window.
+> You can find properties that affect the way the form region appears in Outlook beneath the **Manifest** node in the **Properties** window.
 
  The form region designer is available only if you select **Design a New Form Region** in the **Select how you want to create the form region** page of the **New Outlook Form Region** wizard.
 
@@ -132,7 +132,7 @@ ms.workload:
  You can change form region properties in the `InitializeManifest` method of the form region factory class.
 
 > [!NOTE]
->  To import a form region, you must be working in a project that targets the same version of Outlook that you have installed on the development computer. For example, if you have Outlook 2010 installed, importing a form region will only work in a project was created by using the **Outlook 2010 Add-in** project template.
+> To import a form region, you must be working in a project that targets the same version of Outlook that you have installed on the development computer. For example, if you have Outlook 2010 installed, importing a form region will only work in a project was created by using the **Outlook 2010 Add-in** project template.
 
 ### Update an imported form region's design
  You can add, remove, or change controls on the form region. Before you do this, back up any code that you added to the form region code file. Then, open the *.ofs* file in Outlook, modify the form region, and then save the changes. Use the **New Outlook Form Region** wizard to import the modified *.ofs* file. You can then paste your code into the new form region code file.
@@ -177,7 +177,7 @@ ms.workload:
 |[Associate a form region with an Outlook message class](../vsto/associating-a-form-region-with-an-outlook-message-class.md)|Explains how to specify which Microsoft Office Outlook items display a form region by associating the form region with the message class of each item.|
 |[Walkthrough: Design an Outlook form region](../vsto/walkthrough-designing-an-outlook-form-region.md)|Shows how to design a custom form region that appears as a new page in the Inspector window of a contact item.|
 |[Walkthrough: Import a form region that is designed in Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)|Shows how to design a form region in Microsoft Office Outlook, and then import the form region into an Outlook VSTO Add-in project by using the **New Outlook Form Region** wizard.|
-|[Access a form region at runtime](../vsto/accessing-a-form-region-at-run-time.md)|Describes how to write code to show, hide, or modify controls on a form region, and enable users to run the code from other areas in your project by using the `Globals` class.|
+|[Access a form region at run time](../vsto/accessing-a-form-region-at-run-time.md)|Describes how to write code to show, hide, or modify controls on a form region, and enable users to run the code from other areas in your project by using the `Globals` class.|
 |[How to: Prevent Outlook from displaying a form region](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)|Shows how to prevent Microsoft Office Outlook from displaying a form region for a particular item.|
 |Shows how to access the Outlook item in which a form region appears.|
 |[Custom actions in Outlook form regions](../vsto/custom-actions-in-outlook-form-regions.md)|Describes how to enable users to respond to an Outlook item.|

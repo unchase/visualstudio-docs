@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Test-first development with the Generate From Usage feature"
+title: "Test-first development with Generate From Usage feature"
 ms.date: 10/09/2017
 dev_langs:
   - "VB"
@@ -20,9 +20,9 @@ This topic demonstrates how to use the [Generate From Usage](../ide/visual-cshar
 
  *Test-first development* is an approach to software design in which you first write unit tests based on product specifications, and then write the source code that is required to make the tests succeed. Visual Studio supports test-first development by generating new types and members in the source code when you first reference them in your test cases, before they are defined.
 
- Visual Studio generates the new types and members with minimal interruption to your workflow. You can create stubs for types, methods, properties, fields, or constructors without leaving your current location in code. When you open a dialog box to specify options for type generation, the focus returns immediately to the current open file when the dialog box closes.
+Visual Studio generates the new types and members with minimal interruption to your workflow. You can create stubs for types, methods, properties, fields, or constructors without leaving your current location in code. When you open a dialog box to specify options for type generation, the focus returns immediately to the current open file when the dialog box closes.
 
- The **Generate From Usage** feature can be used with test frameworks that integrate with Visual Studio. In this topic, the Microsoft Unit Testing Framework is demonstrated.
+The **Generate From Usage** feature can be used with test frameworks that integrate with Visual Studio. In this topic, the Microsoft Unit Testing Framework is demonstrated.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -59,7 +59,7 @@ This topic demonstrates how to use the [Generate From Usage](../ide/visual-cshar
 2. Locate the declaration for class `UnitTest1` and rename it to `AutomobileTest`.
 
    > [!NOTE]
-   >  IntelliSense now provides two alternatives for IntelliSense statement completion: *completion mode* and *suggestion mode*. Use suggestion mode for situations in which classes and members are used before they are defined. When an **IntelliSense** window is open, you can press **Ctrl**+**Alt**+**Space** to toggle between completion mode and suggestion mode. See [Use IntelliSense](../ide/using-intellisense.md) for more information. Suggestion mode will help when you are typing `Automobile` in the next step.
+   > IntelliSense now provides two alternatives for IntelliSense statement completion: *completion mode* and *suggestion mode*. Use suggestion mode for situations in which classes and members are used before they are defined. When an **IntelliSense** window is open, you can press **Ctrl**+**Alt**+**Space** to toggle between completion mode and suggestion mode. See [Use IntelliSense](../ide/using-intellisense.md) for more information. Suggestion mode will help when you are typing `Automobile` in the next step.
 
 3. Locate the `TestMethod1()` method and rename it to `DefaultAutomobileIsInitializedCorrectly()`. Inside this method, create a new instance of a class named `Automobile`, as shown in the following screenshots. A wavy underline appears, which indicates a compile-time error, and a [Quick Actions](../ide/quick-actions.md) error light bulb appears in the left margin, or directly below the squiggle if you hover over it.
 

@@ -1,6 +1,6 @@
 ---
 title: FxCop analyzer configuration options
-ms.date: 03/11/2019
+ms.date: 09/23/2019
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -8,9 +8,19 @@ manager: jillfra
 ms.workload:
   - "dotnet"
 ---
-# Configuration options for FxCop analyzers
+# Rule scope options for FxCop analyzers
 
-This page lists the available configuration options, their allowable values, and the configurable rules for each option.
+Some FxCop analyzer rules let you refine which parts of your codebase they should be applied to. This page lists the available scope configuration options, their allowable values, and the rules to which they can be applied. To use these options, specify them in an [EditorConfig file](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project).
+
+These configuration options are available starting in version 2.6.3 of the [Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) NuGet package.
+
+> [!TIP]
+> To see the full list of options that are available for a given version of the FxCopAnalyzers package, look at the *Analyzer Configuration.md* file in the *documentation* folder for the package. The file is located at *%USERPROFILE%\\.nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<version\>\documentation\Analyzer Configuration.md*. This configuration documentation file is included with each version of the package, starting in version 2.6.5. Here's an example of how an option is documented in the *Analyzer Configuration.md* file:
+>
+> Option Name: `sufficient_IterationCount_for_weak_KDF_algorithm`\
+> Option Values: integral values\
+> Default Value: Specific to each configurable rule ('100000' by default for most rules)\
+> Example: `dotnet_code_quality.CA5387.sufficient_IterationCount_for_weak_KDF_algorithm = 100000`
 
 ## api_surface
 

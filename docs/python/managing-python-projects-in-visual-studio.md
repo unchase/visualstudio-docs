@@ -138,7 +138,7 @@ Extension references typically indicate dependencies between projects and are us
 
 A reference to a *.pyd* file enables IntelliSense for the generated module. Visual Studio loads the *.pyd* file into the Python interpreter and introspects its types and functions. It also attempts to parse the doc strings for functions to provide signature help.
 
-If at any time the extension module is updated on disk, Visual Studio reanalyzes the module in the background. This action has no effect on runtime behavior but some completions aren't available until analysis is complete.
+If at any time the extension module is updated on disk, Visual Studio reanalyzes the module in the background. This action has no effect on run-time behavior but some completions aren't available until analysis is complete.
 
 You may also need to add a [search path](search-paths.md) to the folder containing the module.
 
@@ -162,5 +162,8 @@ from System.Windows.Forms import *
 ### WebPI projects
 
 You can add references to WebPI product entries for deployment to Microsoft Azure Cloud Services where you can install additional components via the WebPI feed. By default, the feed displayed is Python-specific and includes Django, CPython, and other core components. You can also select your own feed as shown below. When publishing to Microsoft Azure, a setup task installs all of the referenced products.
+
+> [!IMPORTANT]
+> WebPI projects is not available in Visual Studio 2017 or Visual Studio 2019.
 
 ![WebPI References](media/projects-webPI-components.png)

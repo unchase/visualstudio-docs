@@ -85,6 +85,7 @@
       "ms.prod": "visual-studio-windows",
       "uhfHeaderId": "MSDocsHeader-VisualStudio",
       "titleSuffix": "Visual Studio",
+      "toc_preview": true,
       "searchScope": [
         "VS IDE"
       ],
@@ -148,8 +149,7 @@
     },
     "template": [],
     "xref": [
-      "missingapi.yml",
-      "vs.140.zip"
+      "missingapi.yml"
     ],
     "dest": "vsdocsdocs",
     "groups": {

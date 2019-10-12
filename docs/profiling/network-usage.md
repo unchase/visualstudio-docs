@@ -16,7 +16,7 @@ The Visual Studio **Network** diagnostics tool collects data about network opera
  The Network tool supports only UWP apps. Other platforms are not supported at this time.
 
 > [!NOTE]
->  For a more complete description of the Network tool, see [Introducing Visual Studio's network tool](https://devblogs.microsoft.com/visualstudio/introducing-visual-studios-network-tool/).
+> For a more complete description of the Network tool, see [Introducing Visual Studio's network tool](https://devblogs.microsoft.com/visualstudio/introducing-visual-studios-network-tool/).
 
 ## Collect network tool data
  You should run the **Network** tool with an open Visual Studio project on the Visual Studio computer.
@@ -70,5 +70,5 @@ The Visual Studio **Network** diagnostics tool collects data about network opera
 - [Run profiling tools with or without the debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
 - [Visual Studio blog: Introducing Visual Studio's network inspector](http://go.microsoft.com/fwlink/?LinkId=535022)
 - [Channel 9 Video: VS diagnostics tools - new Network Profiler](https://channel9.msdn.com/Series/ConnectOn-Demand/206)
-- [Profiling in Visual Studio](../profiling/index.md)
+- [Profiling in Visual Studio](../profiling/index.yml)
 - [First look at profiling tools](../profiling/profiling-feature-tour.md)

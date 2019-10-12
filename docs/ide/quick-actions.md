@@ -19,7 +19,17 @@ Quick Actions can be used to:
 
 - Apply a code fix for a [code analyzer](../code-quality/roslyn-analyzers-overview.md) rule violation
 
+::: moniker range=">=vs-2019"
+
+- [Suppress](../code-quality/use-roslyn-analyzers.md#suppress-violations) a code analyzer rule violation or [configure](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity) its severity
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
 - [Suppress](../code-quality/use-roslyn-analyzers.md#suppress-violations) a code analyzer rule violation
+
+::: moniker-end
 
 - Apply a refactoring (for example, [inline a temporary variable](../ide/reference/inline-temporary-variable.md))
 
@@ -56,6 +66,6 @@ To see potential fixes, select either the down arrow next to the light bulb or t
 
 - [Code generation in Visual Studio](../ide/code-generation-in-visual-studio.md)
 - [Common Quick Actions](../ide/common-quick-actions.md)
-- [Code styles and Quick Actions](../ide/code-styles-and-quick-actions.md)
+- [Code styles and Quick Actions](../ide/code-styles-and-code-cleanup.md)
 - [Write and refactor code (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
 - [Refactoring (Visual Studio for Mac)](/visualstudio/mac/refactoring)

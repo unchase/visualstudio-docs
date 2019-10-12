@@ -21,8 +21,8 @@ manager: jillfra
 
 The **Convert** dialog box allows you to select a conversion tool to create a new project from an old one, such as creating a [!INCLUDE[vbprvblong](../../includes/vbprvblong-md.md)] project from a Visual Basic 6 project. You can also use the [Visual Studio Project Converter](http://go.microsoft.com/fwlink/?LinkID=246465), available on the CodePlex web site, to upgrade projects created in previous versions of Visual Studio.  
   
- [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)].  
-  
+ [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]
+
 ## Opening the Convert Dialog Box  
   
 #### To access the Convert dialog box  
@@ -34,5 +34,5 @@ The **Convert** dialog box allows you to select a conversion tool to create a ne
 2. Select the tool that is appropriate for your application.  
   
 ## See Also  
- [NOTINBUILD - How to: Upgrade a Project from Visual Basic 6.0](http://msdn.microsoft.com/c0421e57-5bba-422e-934d-ec42ab9f2af9)   
+ [NOTINBUILD - How to: Upgrade a Project from Visual Basic 6.0](https://msdn.microsoft.com/c0421e57-5bba-422e-934d-ec42ab9f2af9)   
  [Porting, Migrating, and Upgrading Visual Studio Projects](../../porting/porting-migrating-and-upgrading-visual-studio-projects.md)

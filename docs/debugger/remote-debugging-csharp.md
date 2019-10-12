@@ -82,7 +82,7 @@ The debugger cannot deploy Visual C# or Visual Basic desktop applications to a r
 10. Copy the executable that you just built from your Visual Studio computer to the newly-created folder on the remote computer.
 
     > [!CAUTION]
-    >  Do not make changes to the code or rebuild (or you must repeat this step). The executable you copied to the remote machine must exactly match your local source and symbols.
+    > Do not make changes to the code or rebuild (or you must repeat this step). The executable you copied to the remote machine must exactly match your local source and symbols.
 
     You can copy the project manually, use Xcopy, Robocopy, Powershell, or other options.
 
@@ -109,7 +109,7 @@ The debugger cannot deploy Visual C# or Visual Basic desktop applications to a r
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
 
 ## See Also
-- [Debugging in Visual Studio](../debugger/index.md)
+- [Debugging in Visual Studio](../debugger/index.yml)
 - [First look at the debugger](../debugger/debugger-feature-tour.md)
 - [Configure the Windows Firewall for Remote Debugging](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
 - [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)

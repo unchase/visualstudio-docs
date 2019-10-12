@@ -1,7 +1,12 @@
 ---
 title: "Step 2: Add a Random object and a list of icons"
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+dev_langs:
+  - "CSharp"
+  - "VB"
 ms.assetid: 95faea28-eddc-4cfa-95fb-3b34b5a976d7
 author: TerryGLee
 ms.author: tglee
@@ -23,7 +28,10 @@ In this step, you create a set of matching symbols for the game. Each symbol is 
      [!code-csharp[VbExpressTutorial4Step2_3_4#1](../ide/codesnippet/CSharp/step-2-add-a-random-object-and-a-list-of-icons_1.cs)]
      [!code-vb[VbExpressTutorial4Step2_3_4#1](../ide/codesnippet/VisualBasic/step-2-add-a-random-object-and-a-list-of-icons_1.vb)]
 
-     If you're using Visual C#, be sure you put the code after the opening curly brace and just after the class declaration (`public partial class Form1 : Form`). If you're using Visual Basic, put the code right after the class declaration (`Public Class Form1`).
+      > [!IMPORTANT]
+      > Use the programming language control at the top right of this page to view either the C# code snippet or the Visual Basic code snippet.<br><br>![Programming language control for Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
+
+      If you're using C#, be sure you put the code after the opening curly brace and just after the class declaration (`public partial class Form1 : Form`). If you're using Visual Basic, put the code right after the class declaration (`Public Class Form1`).
 
 3. When adding the List object, notice the **IntelliSense** window that opens. The following is a Visual C# example, but similar text appears when you add a list in Visual Basic.
 
@@ -31,7 +39,7 @@ In this step, you create a set of matching symbols for the game. Each symbol is 
 IntelliSense window
 
     > [!NOTE]
-    >  The IntelliSense window appears only when you enter code manually. If you copy and paste the code, it doesn't appear.
+    > The IntelliSense window appears only when you enter code manually. If you copy and paste the code, it doesn't appear.
 
      If you look at the code (and remarks) in small sections, it's easier to understand. Your programs can use list objects to keep track of many different types of items. A list can hold numbers, true/false values, text, or other objects. You can even have a list object that holds other list objects. The items in a list are called elements, and each list only holds one type of element. So, a list of numbers can only hold numbers—you can't add text to that list. Similarly, you can't add numbers to a list of true/false values.
 
@@ -42,7 +50,7 @@ IntelliSense window
      When you use a collection initializer with a `new` statement, after the new List object is created, the program fills it with the data you provided inside the curly braces. In this case, you get a list of strings named icons, and that list will be initialized so that it contains sixteen strings. Each of those strings is a single letter, and they all correspond to the icons that will be in the labels. So, the game will have a pair of exclamation points, a pair of uppercase N letters, a pair of commas, and so on. (When these characters are set to the Webdings font, they will appear as symbols, such as a bus, a bike, a spider, and so forth.) Your list object will have sixteen strings in all, one for each cell in the TableLayoutPanel panel.
 
     > [!NOTE]
-    >  In Visual Basic, you get the same result, but first the strings are put into a temporary array, which is then converted into a list object. An array is similar to a list, except, for example, arrays are created with a fixed size. Lists can shrink and grow as needed, which is important in this program.
+    > In Visual Basic, you get the same result, but first the strings are put into a temporary array, which is then converted into a list object. An array is similar to a list, except, for example, arrays are created with a fixed size. Lists can shrink and grow as needed, which is important in this program.
 
 ## To continue or review
 

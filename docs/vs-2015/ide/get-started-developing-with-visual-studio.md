@@ -27,7 +27,7 @@ Welcome to Visual Studio! After you have [downloaded](http://www.visualstudio.co
 
 - **[Make cross-platform mobile apps in C# or Visual Basic (Xamarin)](../cross-platform/visual-studio-and-xamarin.md)** : Get started using Visual Studio and Tools for Xamarin to create mobile apps that run on Android, iOS, and the Universal Windows Platform from a shared code base.
 
-     Load a sample:[Tasky Portable](http://developer.xamarin.com/samples/mobile/TaskyPortable/) (native UI) or  [Xamarin Forms Todo sample](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) (Xamarin.Forms shared UI) &#124;   [Do a tutorial](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) &#124;                             [Browse the docs](https://msdn.microsoft.com/library/mt299001.aspx) &#124;                                  [Watch a video](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)
+     Load a sample: [TaskyPortable](https://github.com/xamarin/mobile-samples/tree/master/TaskyPortable) (native UI) or  [Xamarin Forms Todo sample](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) (Xamarin.Forms shared UI) &#124;   [Do a tutorial](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) &#124;                             [Browse the docs](https://msdn.microsoft.com/library/mt299001.aspx) &#124;                                  [Watch a video](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)
 
 - **[Make native cross-platform apps and libraries in C++](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)** Go here to get started creating C++ apps and libraries that run on Android, iOS, and the Universal Windows Platform.
 
@@ -59,6 +59,6 @@ Welcome to Visual Studio! After you have [downloaded](http://www.visualstudio.co
 
 |||
 |-|-|
-|[Getting Started with Visual C# and Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md)|[Writing JavaScript Code](http://msdn.microsoft.com/library/cte3c772\(v=vs.94\).aspx)|
-|[Visual C++ for Cross-Platform Mobile Development](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md)|[Introduction to Functional Programming with F#](http://msdn.microsoft.com/library/vstudio/dd233147.aspx)|
+|[Getting Started with Visual C# and Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md)|[Writing JavaScript Code](https://msdn.microsoft.com/library/cte3c772\(v=vs.94\).aspx)|
+|[Visual C++ for Cross-Platform Mobile Development](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md)|[Introduction to Functional Programming with F#](https://msdn.microsoft.com/library/vstudio/dd233147.aspx)|
 |[Getting Started with C++](../ide/getting-started-with-cpp-in-visual-studio.md)|[Getting Started with Debugging in Visual Studio 2015](../ide/getting-started-with-debugging-in-visual-studio-2015.md)|

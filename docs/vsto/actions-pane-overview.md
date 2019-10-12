@@ -24,7 +24,7 @@ ms.workload:
  You can create an actions pane only in a document-level customization for Word or Excel. You cannot create an actions pane in a VSTO Add-in. For more information, see [Features available by Office application and project type](../vsto/features-available-by-office-application-and-project-type.md).
 
 > [!NOTE]
->  The actions pane differs from custom task panes. Custom task panes are associated with the application, not a specific document. You can create custom task panes in VSTO Add-ins for some Microsoft Office applications. For more information, see [Custom task panes](../vsto/custom-task-panes.md).
+> The actions pane differs from custom task panes. Custom task panes are associated with the application, not a specific document. You can create custom task panes in VSTO Add-ins for some Microsoft Office applications. For more information, see [Custom task panes](../vsto/custom-task-panes.md).
 
  ![link to video](../vsto/media/playvideo.gif "link to video") For a related video demonstration, see [How do I: Use WPF controls inside an Excel actions pane?](http://go.microsoft.com/fwlink/?LinkId=132763).
 
@@ -34,7 +34,7 @@ ms.workload:
  [!code-csharp[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#7)]
  [!code-vb[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#7)]
 
- The actions pane becomes visible at runtime as soon as you explicitly add a control to it. After the actions pane is displayed, you can dynamically add or remove controls in response to the user's actions. Typically, you add the code to display the actions pane in the `Startup` event handler of `ThisDocument` or `ThisWorkbook` so that the actions pane is visible when the user first opens the document. However, you might want to display the actions pane only in response to a user's action in the document. For example, you might add the code to the `Click` event of a control on the document.
+ The actions pane becomes visible at run time as soon as you explicitly add a control to it. After the actions pane is displayed, you can dynamically add or remove controls in response to the user's actions. Typically, you add the code to display the actions pane in the `Startup` event handler of `ThisDocument` or `ThisWorkbook` so that the actions pane is visible when the user first opens the document. However, you might want to display the actions pane only in response to a user's action in the document. For example, you might add the code to the `Click` event of a control on the document.
 
 ### Add multiple controls to the actions pane
  When you add multiple controls to the actions pane, you should group the controls in a user control and then add the user control to the <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> property. This process includes the following steps:
@@ -44,7 +44,7 @@ ms.workload:
 2. Add Windows Forms controls to the <xref:System.Windows.Forms.UserControl> by using the designer, or by writing code.
 
    > [!NOTE]
-   >  You can also add WPF controls to the actions pane by adding a WPF <xref:System.Windows.Controls.UserControl> to the Windows Forms <xref:System.Windows.Forms.UserControl>. For more information, see [Use WPF controls in Office solutions](../vsto/using-wpf-controls-in-office-solutions.md).
+   > You can also add WPF controls to the actions pane by adding a WPF <xref:System.Windows.Controls.UserControl> to the Windows Forms <xref:System.Windows.Forms.UserControl>. For more information, see [Use WPF controls in Office solutions](../vsto/using-wpf-controls-in-office-solutions.md).
 
 3. Add an instance of the custom user control to the controls that are contained in the `ActionsPane` field of the `ThisWorkbook` (for Excel) or `ThisDocument` (for Word) class in your project.
 
@@ -98,7 +98,7 @@ ms.workload:
  If you display a message box in the <xref:System.Windows.Forms.Control.Validating> event handler of a control on the actions pane, the event might be raised a second time when focus moves from the control to the message box. To prevent this issue, use an <xref:System.Windows.Forms.ErrorProvider> control to display any validation error messages.
 
 ## User control stacking order
- If you are using multiple user controls, you can write code to properly stack the user controls on the actions pane whether it is docked vertically or horizontally. You can set the stacking order of the user controls on the actions pane by using the <xref:Microsoft.Office.Tools.StackStyle> enumeration of the <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> property. For more information, see [How to: Manage control layout on actions panes](../vsto/how-to-manage-control-layout-on-actions-panes.md)
+ If you are using multiple user controls, you can write code to properly stack the user controls on the actions pane whether it is docked vertically or horizontally. You can set the stacking order of the user controls on the actions pane by using the <xref:Microsoft.Office.Tools.StackStyle> enumeration of the <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> property. For more information, see [How to: Manage control layout on actions panes](../vsto/how-to-manage-control-layout-on-actions-panes.md).
 
  The <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> property can take the following <xref:Microsoft.Office.Tools.StackStyle> enumeration values.
 
@@ -116,7 +116,7 @@ ms.workload:
  [!code-vb[Trin_VstcoreActionsPaneExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#10)]
 
 ## Anchor controls
- If the user resizes the actions pane at runtime, the controls can resize with the actions pane. You can use the <xref:System.Windows.Forms.Control.Anchor%2A> property of a Windows Forms control to anchor controls to the actions pane. You can also anchor the Windows Forms controls onto the user control in the same manner. For more information, see [How to: Anchor controls on Windows Forms](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms).
+ If the user resizes the actions pane at run time, the controls can resize with the actions pane. You can use the <xref:System.Windows.Forms.Control.Anchor%2A> property of a Windows Forms control to anchor controls to the actions pane. You can also anchor the Windows Forms controls onto the user control in the same manner. For more information, see [How to: Anchor controls on Windows Forms](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms).
 
 ## Resize the actions pane
  You cannot directly change the size of an <xref:Microsoft.Office.Tools.ActionsPane> because the <xref:Microsoft.Office.Tools.ActionsPane> is embedded in the task pane. However, you can programmatically change the width of the task pane by setting the <xref:Microsoft.Office.Core.CommandBar.Width%2A> property of the <xref:Microsoft.Office.Core.CommandBar> that represents the task pane. You can change the height of the task pane if it is docked horizontally or is floating.
@@ -135,7 +135,7 @@ ms.workload:
  [!code-vb[Trin_VstcoreActionsPaneWord#100](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#100)]
 
 > [!NOTE]
->  End users can manually reposition the task pane at any time. There is no way to ensure that the task pane will remain docked at the position you indicate programmatically. However, you can check for orientation changes and ensure that the controls on the actions pane are stacked in the correct direction. For more information, see [How to: Manage control layout on actions panes](../vsto/how-to-manage-control-layout-on-actions-panes.md).
+> End users can manually reposition the task pane at any time. There is no way to ensure that the task pane will remain docked at the position you indicate programmatically. However, you can check for orientation changes and ensure that the controls on the actions pane are stacked in the correct direction. For more information, see [How to: Manage control layout on actions panes](../vsto/how-to-manage-control-layout-on-actions-panes.md).
 
  Setting the <xref:Microsoft.Office.Tools.ActionsPane.Top%2A> and <xref:Microsoft.Office.Tools.ActionsPane.Left%2A> properties of the <xref:Microsoft.Office.Tools.ActionsPane> doesn't change its position because the <xref:Microsoft.Office.Tools.ActionsPane> object is embedded in the task pane.
 

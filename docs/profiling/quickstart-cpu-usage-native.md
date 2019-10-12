@@ -1,15 +1,15 @@
 ---
 title: "Analyze CPU usage data (C++)"
 description: "Measure app performance in C++ using the CPU Usage diagnostics tool"
-ms.date: "08/06/2018"
-ms.topic: "quickstart"
+ms.date: 08/06/2018
+ms.topic: quickstart
 f1_keywords:
   - ""
 helpviewer_keywords:
   - "Profiling Tools, quick start"
   - "Diagnostics Tools, CPU Usage"
-author: "mikejo5000"
-ms.author: "mikejo"
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
   - "cplusplus"
@@ -180,5 +180,5 @@ We recommend that you begin analyzing your data by examining the list of functio
 
 ## See also
 
-- [Profiling in Visual Studio](../profiling/index.md)
+- [Profiling in Visual Studio](../profiling/index.yml)
 - [First look at profiling tools](../profiling/profiling-feature-tour.md)

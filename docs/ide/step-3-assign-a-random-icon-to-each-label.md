@@ -1,7 +1,12 @@
 ---
 title: "Step 3: Assign a random icon to each label"
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+dev_langs:
+  - "CSharp"
+  - "VB"
 ms.assetid: 0ba5ed7a-9aaa-41f4-95d2-e3c2d567bc79
 author: TerryGLee
 ms.author: tglee
@@ -19,6 +24,9 @@ If the icons show up in the same cells every game, it's not very challenging. To
      [!code-csharp[VbExpressTutorial4Step2_3_4#2](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_1.cs)]
      [!code-vb[VbExpressTutorial4Step2_3_4#2](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_1.vb)]
 
+      > [!IMPORTANT]
+      > Use the programming language control at the top right of this page to view either the C# code snippet or the Visual Basic code snippet.<br><br>![Programming language control for Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
+
 2. Add the `AssignIconsToSquares()` method as shown in the previous step. You can put it just below the code you added in [Step 2: Add a Random object and a list of icons](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
 
      As mentioned earlier, there's something new in your `AssignIconsToSquares()` method: a `foreach` loop in Visual C# and `For Each` in Visual Basic. You can use a `For Each` loop any time you want to do the same action multiple times. In this case, you want to execute the same statements for every label on your <xref:System.Windows.Forms.TableLayoutPanel>, as explained by the following code. The first line creates a variable named `control` that stores each control one at a time while that control has the statements in the loop executed on it.
@@ -27,7 +35,7 @@ If the icons show up in the same cells every game, it's not very challenging. To
      [!code-vb[VbExpressTutorial4Step2_3_4#14](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_2.vb)]
 
     > [!NOTE]
-    >  The names "iconLabel" and "control" are used because they are descriptive. You can replace these names with any names, and the code will work exactly the same as long as you change the name in each statement inside the loop.
+    > The names "iconLabel" and "control" are used because they are descriptive. You can replace these names with any names, and the code will work exactly the same as long as you change the name in each statement inside the loop.
 
      The `AssignIconsToSquares()` method iterates through each label control in the TableLayoutPanel and executes the same statements for each of them. Those statements pull a random icon from the list that you added in [Step 2: Add a Random object and a list of icons](../ide/step-2-add-a-random-object-and-a-list-of-icons.md). (That's why you included two of each icon in the list, so there would be a pair of icons assigned to random Label controls.)
 
@@ -62,7 +70,7 @@ Matching game with random icons
      The icons are visible now because you haven't hidden them. To hide them from the player, you can set each label's **ForeColor** property to the same color as its **BackColor** property.
 
     > [!TIP]
-    >  Another way to hide controls like labels is to set their **Visible** property to **False**.
+    > Another way to hide controls like labels is to set their **Visible** property to **False**.
 
 6. To hide the icons, stop the program and remove the comment marks for the commented line of code inside the `For Each` loop.
 

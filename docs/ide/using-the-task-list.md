@@ -58,6 +58,9 @@ A comment in your code preceded by a comment marker and a predefined token also 
 
 Because `TODO` is a predefined token, this comment appears as a `TODO` task in the list.
 
+> [!NOTE]
+> Default tokens are only available for the C/C++, C#, and VB languages. For other languages, see the **Custom tokens** section.
+
 ### Custom tokens
 
 By default, Visual Studio includes the following tokens: `HACK`, `TODO`, `UNDONE`, and `UnresolvedMergeConflict`. They are not case-sensitive. You can also create your own custom tokens.
@@ -77,6 +80,9 @@ To create a custom token:
 4. In the **Priority** drop-down list, choose a default priority for the new token.
 
 5. Choose **Add**.
+
+> [!TIP]
+> The **Add** button becomes enabled after you enter a name. You must enter a name before clicking **Add**.
 
 ### C++ TODO comments
 

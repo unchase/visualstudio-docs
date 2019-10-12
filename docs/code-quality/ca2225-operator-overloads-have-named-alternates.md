@@ -12,8 +12,8 @@ ms.assetid: af8f7ab1-63ad-4861-afb9-b7a7a2be15e1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-  - "multiple"
+dev_langs:
+  - CSharp
 ---
 # CA2225: Operator overloads have named alternates
 
@@ -22,7 +22,7 @@ ms.workload:
 |TypeName|OperatorOverloadsHaveNamedAlternates|
 |CheckId|CA2225|
 |Category|Microsoft.Usage|
-|Breaking Change|Non Breaking|
+|Breaking change|Non-breaking|
 
 ## Cause
 
@@ -32,12 +32,16 @@ By default, this rule only looks at externally visible types, but this is [confi
 
 ## Rule description
 
-Operator overloading allows the use of symbols to represent computations for a type. For example, a type that overloads the plus symbol (+) for addition would typically have an alternative member named 'Add'. The named alternative member provides access to the same functionality as the operator, and is provided for developers who program in languages that do not support overloaded operators.
+Operator overloading allows the use of symbols to represent computations for a type. For example, a type that overloads the plus symbol `+` for addition would typically have an alternative member named `Add`. The named alternative member provides access to the same functionality as the operator. It's provided for developers who program in languages that do not support overloaded operators.
 
-This rule examines the operators listed in the following table.
+This rule examines:
 
-|C#|Visual Basic|C++|Alternate name|
-|---------|------------------|-----------|--------------------|
+- Implicit and explicit cast operators in a type by checking for methods named `To<typename>` and `From<typename>`.
+
+- The operators listed in the following table:
+
+|C#|Visual Basic|C++|Alternate method name|
+|-|-|-|-|
 |+ (binary)|+|+ (binary)|Add|
 |+=|+=|+=|Add|
 |&|And|&|BitwiseAnd|
@@ -50,14 +54,14 @@ This rule examines the operators listed in the following table.
 |==|=|==|Equals|
 |^|Xor|^|Xor|
 |^=|Xor=|^=|Xor|
-|>|>|>|Compare|
-|>=|>=|>=|Compare|
+|>|>|>|CompareTo or Compare|
+|>=|>=|>=|CompareTo or Compare|
 |++|N/A|++|Increment|
-|<>|!=|Equals|
+|!=|<>|!=|Equals|
 |<<|<<|<<|LeftShift|
 |<<=|<<=|<<=|LeftShift|
-|<|<|<|Compare|
-|<=|<=|\<=|Compare|
+|<|<|<|CompareTo or Compare|
+|<=|<=|\<=|CompareTo or Compare|
 |&&|N/A|&&|LogicalAnd|
 |&#124;&#124;|N/A|&#124;&#124;|LogicalOr|
 |!|N/A|!|LogicalNot|
@@ -75,25 +79,24 @@ This rule examines the operators listed in the following table.
 |+ (unary)|N/A|+|Plus|
 |false|IsFalse|False|IsTrue (Property)|
 
-N/A == Cannot be overloaded in the selected language.
+*N/A means the operator cannot be overloaded in the selected language.
 
-The rule also checks implicit and explicit cast operators in a type (`SomeType`) by checking for methods named `ToSomeType` and `FromSomeType`.
-
-In C#, when a binary operator is overloaded, the corresponding assignment operator, if any, is also implicitly overloaded.
+> [!NOTE]
+> In C#, when a binary operator is overloaded, the corresponding assignment operator, if any, is also implicitly overloaded.
 
 ## How to fix violations
 
-To fix a violation of this rule, implement the alternative method for the operator; name it using the recommended alternative name.
+To fix a violation of this rule, implement the alternative method for the operator. Name it using the recommended alternative name.
 
 ## When to suppress warnings
 
-Do not suppress a warning from this rule if you are implementing a shared library. Applications can ignore a warning from this rule.
+Do not suppress a warning from this rule if you're implementing a shared library. Applications can ignore a warning from this rule.
 
 ## Configurability
 
-If you're running this rule from [FxCop analyzers](install-fxcop-analyzers.md) (and not through static code analysis), you can configure which parts of your codebase to run this rule on, based on their accessibility. For example, to specify that the rule should run only against the non-public API surface, add the following key-value pair to an .editorconfig file in your project:
+If you're running this rule from [FxCop analyzers](install-fxcop-analyzers.md) (and not with legacy analysis), you can configure which parts of your codebase to run this rule on, based on their accessibility. For example, to specify that the rule should run only against the non-public API surface, add the following key-value pair to an .editorconfig file in your project:
 
-```
+```ini
 dotnet_code_quality.ca2225.api_surface = private, internal
 ```
 

@@ -32,7 +32,7 @@ ms.workload:
 - [Hide and show actions panes by using buttons on the custom tab](#BKMK_HideShowActionsPane).
 
 > [!NOTE]
->  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).
+> Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).
 
 ## Prerequisites
  You need the following components to complete this walkthrough:
@@ -153,7 +153,7 @@ ms.workload:
 - Extend a standard or custom Microsoft Office Outlook form. For more information, see [Walkthrough: Design an Outlook form region](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
 ## See also
-- [Access the ribbon at runtime](../vsto/accessing-the-ribbon-at-run-time.md)
+- [Access the ribbon at run time](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Ribbon overview](../vsto/ribbon-overview.md)
 - [Ribbon Designer](../vsto/ribbon-designer.md)
 - [Customize a ribbon for Outlook](../vsto/customizing-a-ribbon-for-outlook.md)

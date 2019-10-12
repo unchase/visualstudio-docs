@@ -24,7 +24,7 @@ ms.workload:
  In document-level customizations, you can protect worksheets by using the Excel designer. You can also protect a worksheet programmatically at run time in any project type.
 
 > [!NOTE]
->  You cannot add Windows Forms controls to areas of a worksheet that are protected.
+> You cannot add Windows Forms controls to areas of a worksheet that are protected.
 
 ## Use the designer
 
@@ -42,7 +42,7 @@ ms.workload:
 
      The **Allow Users to Edit Ranges** dialog box appears. You can specify ranges that are unlocked using a password, and users who can edit ranges without a password.
 
-## Use code at runtime
+## Use code at run time
  The following code sets the password (using the variable getPasswordFromUser, which contains a password obtained from the user) and allows only sorting.
 
 ### To protect a worksheet by using code in a document-level customization

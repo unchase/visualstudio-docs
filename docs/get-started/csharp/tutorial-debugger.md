@@ -2,16 +2,16 @@
 title: "Tutorial: Debug C# code"
 description: "Learn how to start the Visual Studio debugger, step through code, and inspect data."
 ms.custom: "debug-experiment, seodec18, get-started"
-ms.date: "11/27/2018"
+ms.date: 11/27/2018
 ms.technology: "vs-ide-debug"
-ms.topic: "tutorial"
+ms.topic: tutorial
 dev_langs:
   - "CSharp"
 helpviewer_keywords:
   - "debugger"
 ms.assetid: 62734c0d-a75a-4576-8f73-0e97c19280e1
-author: "mikejo5000"
-ms.author: "mikejo"
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
   - "multiple"
@@ -51,7 +51,7 @@ If you haven't already installed Visual Studio, go to the [Visual Studio downloa
 
 ::: moniker range="vs-2019"
 
-If you haven't already installed Visual Studio, go to the [Visual Studio downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) page to install it for free.
+If you haven't already installed Visual Studio, go to the [Visual Studio downloads](https://visualstudio.microsoft.com/downloads) page to install it for free.
 
 ::: moniker-end
 

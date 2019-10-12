@@ -31,7 +31,7 @@ A *service reference* enables a project to access one or more [!INCLUDE[ssAstori
 2. In the **Address** box, enter the URL for the service, and then click **Go** to search for the service. If the service implements user name and password security, you may be prompted for a user name and password.
 
     > [!NOTE]
-    >  You should only reference services from a trusted source. Adding references from an untrusted source may compromise security.
+    > You should only reference services from a trusted source. Adding references from an untrusted source may compromise security.
 
      You can also select the URL from the **Address** list, which stores the previous 15 URLs at which valid service metadata was found.
 
@@ -64,7 +64,7 @@ A *service reference* enables a project to access one or more [!INCLUDE[ssAstori
     A service client (proxy) generates, and metadata that describes the service is added to the *app.config* file.
 
 ## Update a service reference
- The Entity Data Model for a [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] sometimes changes. When this happens, you must update the service reference.
+The Entity Data Model for a [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] sometimes changes. When this happens, you must update the service reference.
 
 ### To update a service reference
 
@@ -73,7 +73,7 @@ A *service reference* enables a project to access one or more [!INCLUDE[ssAstori
      A progress dialog box displays while the reference is updated from its original location, and the service client is regenerated to reflect any changes in the metadata.
 
 ## Remove a service reference
- If a service reference is no longer being used, you can remove it from your solution.
+If a service reference is no longer being used, you can remove it from your solution.
 
 ### To remove a service reference
 
@@ -82,7 +82,7 @@ A *service reference* enables a project to access one or more [!INCLUDE[ssAstori
      The service client will be removed from the solution, and the metadata that describes the service will be removed from the *app.config* file.
 
     > [!NOTE]
-    >  Any code that references the service reference must be removed manually.
+    > Any code that references the service reference must be removed manually.
 
 ## See also
 

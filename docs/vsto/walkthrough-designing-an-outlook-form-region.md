@@ -31,7 +31,7 @@ ms.workload:
 - Testing the Outlook form region.
 
 > [!NOTE]
->  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).
+> Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).
 
 ## Prerequisites
  You need the following components to complete this walkthrough:
@@ -167,7 +167,7 @@ ms.workload:
 - To learn about how to customize the ribbon of an Outlook item, see [Customize a ribbon for Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
 ## See also
-- [Access a form region at runtime](../vsto/accessing-a-form-region-at-run-time.md)
+- [Access a form region at run time](../vsto/accessing-a-form-region-at-run-time.md)
 - [Create Outlook form regions](../vsto/creating-outlook-form-regions.md)
 - [Guidelines to create Outlook form regions](../vsto/guidelines-for-creating-outlook-form-regions.md)
 - [Walkthrough: Import a form region that is designed in Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)
